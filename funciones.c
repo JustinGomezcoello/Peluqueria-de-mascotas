@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-void calcularMascotas(float *Mascotas, char id[][25], char nombre[][25], char tipo[][25], char edad[][25], char dueno[][25])
+void calcularMascotas(float *Mascotas, char id[10][25], char nombre[10][25], char tipo[10][25], char edad[10][25], char dueno[10][25])
 {
     float mascotas;
     printf("\nCuantas mascotas desea ingresar: ");
@@ -30,7 +30,7 @@ void calcularMascotas(float *Mascotas, char id[][25], char nombre[][25], char ti
     }
 }
 
-void calcularServicio(int *cont, float Mascotas, char nombre[][25])
+void calcularServicio(int *cont, float Mascotas, char nombre[10][25])
 {
     for (int i = 0; i < Mascotas; i++)
     {
@@ -98,7 +98,7 @@ void calcularServicio(int *cont, float Mascotas, char nombre[][25])
     }
 }
 
-void facturarServicios(int cont[10], float Mascotas, char nombre[][25])
+void facturarServicios(int cont[10], float Mascotas, char nombre[10][25])
 {
     char mascota2[25];
     while (1)
