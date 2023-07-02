@@ -119,7 +119,43 @@ void facturarServicios(int cont[10], float Mascotas, char nombre[10][25])
             {
                 if (strcmp(mascota2, nombre[i]) == 0)
                 {
+                       if (cont[i] == 10)
+                    {
+                        printf("\n El servicio es: Corte de pelo $10\n ");
+                    }
+                    else if (cont[i] == 15)
+                    {
+                        printf("\nEl servicio es: Desparasitar $15 \n");
+                    }
+                    else if (cont[i] == 12)
+                    {
+                        printf("\nEl servicio es: Bano $12\n ");
+                    }
+                    else if (cont[i] == 25)
+                    {
+                        printf("\n El servicio es: Corte de pelo $10\n ");
+                        printf("\nEl servicio es: Desparasitar $15\n ");
+                    }
+                    else if (cont[i] == 27)
+                    {
+                        printf("\nEl servicio es: Desparasitar $15\n ");
+                        printf("\nEl servicio es: Bano $12\n ");
+                    }
+                    else if (cont[i] == 22)
+                    {
+                        printf("\n El servicio es: Corte de pelo $10\n ");
+                        printf("\nEl servicio es: Bano $12\n ");
+                    }
+                    else if (cont[i] == 37)
+                    {
+                        printf("\n El servicio es: Corte de pelo $10\n ");
+                        printf("\nEl servicio es: Desparasitar $15\n ");
+                        printf("\nEl servicio es: Bano $12\n ");
+                    }
+                   
                     printf("\nEl valor a pagar es de: %d\n", cont[i]);
+                 
+
                     break;
                 }
             }
